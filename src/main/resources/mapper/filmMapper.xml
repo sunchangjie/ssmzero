@@ -1,0 +1,22 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.ssm.mapper.IFilmMapper">
+    <resultMap type="com.hand.ssm.domain.Film" id="filmResultMap">
+        <id column="film_id"  property="filmId"></id>
+        <result column="title"  property="title"/>
+        <result column="description" property="description"/>
+        <result column="release_year" property="releaseYear"/>
+        <result column="language_id"  property="languageId"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="filmResultMap">
+        SELECT
+        film_id,
+        title,
+        description,
+        release_year,
+        language_id
+        FROM
+        film
+    </select>
+
+</mapper>
