@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<p>测试页面，跳转成功!!yeah</p>
+<p>测试页面，跳转成功!!</p>
 </body>
 </html>
