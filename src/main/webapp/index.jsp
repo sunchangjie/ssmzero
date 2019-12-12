@@ -3,24 +3,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-<h2>welcome!!</h2>
+<h2>------Test Page------</h2>
 
-<a href="/film/findall.do">findall</a>
-<p>------------------cacheController2-------------------------</p>
-<a href="/cache/getAnotherUser.do">getAnotherUser</a>
+<a href="/film/findall.do">findall--</a>
+<a href="javascript:void(0);" onclick="loadXMLDoc('/film/findall.do')">findall</a>
 
-<br>
-<a href="/cache/getUsersByNameAndAge.do">getUsersByNameAndAge</a>
 
-<br>
-<a href="/cache/evictAll.do">evictAll</a>
-
-<br>
-<a href="/cache/evictUser.do">evictUser</a>
-
-<br>
-<a href="/cache/getUserCache.do">getUserCache</a>
-<p>-------------------cacheController2------------------------</p>
+<p>-------------------UserCacheController--------------------</p>
 
 <a href="javascript:void(0);" onclick="loadXMLDoc('/cache/addUser.do')">addUser</a>
 
@@ -42,7 +31,7 @@
 <p>-----------------result---------------------</p>
 <%--<div id="myDiv">result...</div>--%>
 
-<textarea rows="10" cols="30" id="myDiv" placeholder="result will show here..."></textarea >
+<textarea rows="20" cols="80" id="myDiv" placeholder="result will show here..."></textarea >
 
 <script>
     function loadXMLDoc(url) {
